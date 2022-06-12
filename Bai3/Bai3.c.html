@@ -11,11 +11,22 @@
 <p id="hienthi"></p>
 <script>
     function nhan(){
+        let a=document.getElementById("so1").value;
+        let b=document.getElementById("so2").value;
+        let ssh1=(b-a)/1+1
+        let ssh2=(a-b)/1+1
+        let S1=((b+a)*ssh1)/2
+        let S2=((b+a)*ssh2)/2
+        if (a==b) {alert("Tổng bằng chính số nhập lun nhaaa");}
+        else if (a>b){
+            document.getElementById("hienthi").innerHTML = "Tổng là"+S2;}
+        else
+            document.getElementById("hienthi").innerHTML = "Tổng là"+S1;}
 
 
-let a=document.getElementById("so1").value;
-let b=document.getElementById("so2").value;
-let c=b-a-1
+
+
+
 
 
 </script>
