@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<input id="so a" type="number" placeholder="Nhập số a"><br>
+<input id="so b" type="number" placeholder="Nhập số b"><br>
+<input id="so c" type="number" placeholder="Nhập số c"><br>
+<button  onclick="check3()">Check</button>
+<p id="hienthi1"></p>
+<p id="hienthi2"></p>
+<p id="hienthi3"></p>
+<p id="hienthi4"></p>
+<script>
+    function check3(){
+        let a=document.getElementById("so a").value;
+        let b=document.getElementById("so b").value;
+        let c=document.getElementById("so c").value;
+        if (a>0 &&b>0&& c>0){
+
+        }
+            else
+        {
+            alert("Không được nhập số âm KQ ở dưới sẽ sai");
+        }
+        if (a>0 &&b>0&& c>0 &&a+b>c&& b+c>a&&a+c>b){
+            document.getElementById("hienthi1").innerText="Là cạnh của một tam giác";
+        }
+        else {
+            document.getElementById("hienthi1").innerText="Không là cạnh của tam giác";}
+        if (a==b){
+            document.getElementById("hienthi2").innerText="Đây là tam giác cân";}
+            else if (a==c){
+            document.getElementById("hienthi2").innerText="Đây là tam giác cân";}
+            else if (b==c){
+            document.getElementById("hienthi2").innerText="Đây là tam giác cân";}
+            else {
+            document.getElementById("hienthi2").innerText="Đây  không là tam giác cân";}
+
+
+        if (a==b&&b==c ){
+            document.getElementById("hienthi3").innerText="Đây là tam giác đều";}
+            else {
+            document.getElementById("hienthi3").innerText="Đây không là tam giác đều";
+        }
+         if (a*a==b*b+c*c){
+            document.getElementById("hienthi4").innerText="Tam giác vuông tại a";}
+        else if (b*b==a*a+c*c){
+            document.getElementById("hienthi4").innerText="Tam giác vuông tại b";}
+        else if (b*b+a*a==c*c){
+            document.getElementById("hienthi4").innerText="Tam giác vuông tại c";}
+        else {
+            document.getElementById("hienthi4").innerText="Tam giác không vuông";
+    }
+    }
+</script>
+</body>
+</html>

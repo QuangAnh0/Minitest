@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nam" placeholder="Nhập năm">
+<button onclick="kiemtra()">Kiểm tra</button>
+<p id="hienthi"></p>
+<script>
+    function kiemtra() {
+        let a = document.getElementById("nam").value;
+        let b = a / 100
+        let b1 = parseInt(b)
+        let b2 = b1 + 1
+        if (b > 1) {
+            if (b>b1) {
+                document.getElementById("hienthi").innerText = "Thế kỷ" + b2;
+            } else
+                document.getElementById("hienthi").innerText = "Thế kỷ" + b;
+            }else
+                document.getElementById("hienthi").innerText = "Chưa đủ 1 thế kỉ";
+
+        }
+
+</script>
+</body>
+</html>

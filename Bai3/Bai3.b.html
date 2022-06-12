@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <input type="number" id="so1" placeholder="Nhập a">
+    <input type="number" id="so2" placeholder="Nhập b">
+    <button onclick="nhan()">Kết quả</button>
+    <p id="hienthia"></p>
+    <p id="hienthib"></p>
+<script>
+    function nhan(){
+    let a=document.getElementById("so1").value;
+    let b=document.getElementById("so2").value;
+    let tinh1=a^2
+    let tinh2=a^b
+    document.getElementById("hienthia").innerText="a^2"+a^2
+    document.getElementById("hienthib").innerText="a^b="+a^b
+    }
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="so" placeholder="Nhập a">
+<button onclick="nhan()">Kết quả</button>
+<p id="hienthiC"></p>
+<p id="hienthiS"></p>
+<script>
+    function nhan(){
+    let a=document.getElementById("so").value;
+    let C=4*a
+    let S=a*a
+        if (a>0){
+    document.getElementById("hienthiC").innerText="C="+C;
+    document.getElementById("hienthiS").innerText="S="+S;
+        }
+        else {
+            alert("Làm gì có cạnh âm hay bằng 0")
+        }
+    }
+</script>
+</body>
+</html>
